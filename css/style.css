@@ -46,7 +46,7 @@ a.active{
 }
 
 /* =====================================================header=============================================== */
-/*фиксированная шапки*/
+
 .header {
   position: fixed;
   width: 100%;
@@ -67,14 +67,14 @@ a.active{
   z-index: 2;
 }
 
-/*ограничиваем шапку*/
+
 .container {
   max-width: 1142px;
   margin: 0 auto;
   padding: 0 25px;
 }
 
-/*выводим контентную часть шапки*/
+
 .header__body {
   position: relative;
   display: -webkit-flex;
@@ -83,7 +83,7 @@ a.active{
   display: -o-flex;
   display: flex;
   justify-content: space-between;
-  height: 80px;
+  height: 100px;
   -ms-align-items: center;
   align-items: center;
 }
@@ -124,6 +124,7 @@ a.active{
 
   font-family: "Open Sans", sans-serif;
   line-height: 24px;
+  font-weight: 600;
 
   text-decoration: none;
 }
@@ -132,8 +133,6 @@ a.active{
   border-bottom: 2px solid #fcac45;
   margin-bottom: -2px;
 }
-
-
 
 @media (max-width:969px) {
   body.lock {
@@ -225,31 +224,15 @@ a.active{
     font-size: 24px;
   }
 }
-
 /*===================@media end===================*/
-
-
-
-
-
-
 /* =====================================================main text=============================================== */
-
 .first__page__main-text{
-  /* margin-top: 100px; */
+  margin: 100px;
   text-align: center;
   color: #999999;
   
-  padding-top: 297px;
-  width: 100%;
+  padding: 12% 5%;
 }
-@media (max-width: 576px){
-  .first__page__main-text{
-    width: 95%;
-    padding-top: 40%;
-  }
-}
-
 
 .main-text__title{
   font-family: "Open Sans";
@@ -282,15 +265,82 @@ a.active{
 .main__subtitle_decoration{
   font-weight: 700;
 }
-
-@media (max-width:425px){
-  .main-text__subtitle{
-    margin-top: 30px;
-  }
-  .main-text__subtitle{
-    font-size: 17px;
+/*===================================@media start===================================*/
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+  .first__page__main-text {
+    padding: 2% 5%;
   }
 }
+@media only screen 
+and (min-width : 321px) {
+  .first__page__main-text {
+    padding: 7% 5% 0;
+  }
+}
+@media only screen 
+and (max-width : 320px) {
+  .first__page__main-text {
+    padding: 17% 5%;
+  }
+  .main-text__title {
+    line-height: 41px;
+  }
+}
+@media only screen 
+and (max-width : 360px) {
+  .first__page__main-text {
+    padding: 17% 5%;
+  }
+  .main-text__title {
+    line-height: 41px;
+  }
+}
+@media only screen 
+and (max-width : 411px) {
+  .first__page__main-text {
+    padding: 17% 5%;
+  }
+  .main-text__title {
+    line-height: 41px;
+  }
+}
+
+@media only screen 
+and (max-width : 414px) {
+  .first__page__main-text {
+    padding: 20% 5% 0;
+  }
+  .main-text__title {
+    line-height: 41px;
+  }
+}
+
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+  .first__page__main-text {
+    padding: 9% 5%;
+  }
+}
+
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+  .first__page__main-text {
+    padding: 12% 5%;
+  }
+}
+
+/*===================================@media end===================================*/
+
+
+
 /* =====================================================About Us=============================================== */
 .about{
   padding: 6% 0;
@@ -1087,10 +1137,7 @@ a.active{
     font-size: 39px;
   }
 }
-
-
 /*========================================== CONTACT========================================== */
-
 .contact {
   padding: 100px 0;
 }
@@ -1156,9 +1203,9 @@ a.active{
   margin-bottom: 32px;
 }
 textarea {
-    width: 100%; /* Ширина поля в процентах */
-    height: 200px; /* Высота поля в пикселах */
-    resize: none; /* Запрещаем изменять размер */
+    width: 100%;
+    height: 200px;
+    resize: none; 
    } 
 .btn-container{
   display: flex;
@@ -1195,17 +1242,13 @@ textarea {
   font-size: 16px;
   font-weight: 400;
 }
-
 .contact__form textarea{
   color: #636363;
   font-family: "Open Sans";
   font-size: 16px;
   font-weight: 400;
 }
-
 /*=============== @media=============== */
-
-
 @media (max-width: 770px){
   .contact__form-body{
     max-width: 80%;
@@ -1244,8 +1287,6 @@ textarea {
     padding-bottom: 10%;
   }
 }
-
-
 /*=============== @media end=============== */
 
 /*==========================================Footer==========================================*/
@@ -1271,41 +1312,4 @@ textarea {
   padding: 0 7.5px;
 }
 
-
-/*========================================@media start========================================*/
-@media(max-width:1280px){
-}
-
-@media (max-width: 992px){
-  
-}
-
-@media (max-width: 770px){
-  
-}
-
-@media (max-width: 576px){
-  
-}
-
-@media (max-width: 360px){
-  
-}
-/*=============== @media end=============== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*==========================================Footer end==========================================*/
